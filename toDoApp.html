@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+<head>
+    <title>TO DO List</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
+
+    <script src="js/angular.js"></script>
+
+    <script>
+        //AngularJS apps are formed from one or more modules. Modules are created by calling the angular.module
+        //method, as follows:-->
+        var todoApp = anguler.module("todoApp",[]);
+        //The arguments to the angular.
+        // module method are the name of the module to create and an array of other modules that are going to be needed.
+        // I have created a module called todoApp, following the slightly
+        //confusing convention of appending App to application module names
+        //and telling AngularJS that I need no other modules by providing an empty
+        //array for the second argument.
+    </script>
+</head>
+<body>
+<div class="page-header">
+    <h1>Adam's To Do List</h1>
+</div>
+<div class="panel">
+    <div class="input-group">
+        <input class="form-control" />
+            <span class="input-group-btn">
+                <button class="btn btn-default">Add</button>
+            </span>
+    </div>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Description</th>
+            <th>Done</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr><td>Buy Flowers</td><td>No</td></tr>
+        <tr><td>Get Shoes</td><td>No</td></tr>
+        <tr><td>Collect Tickets</td><td>Yes</td></tr>
+        <tr><td>Call Joe</td><td>No</td></tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
